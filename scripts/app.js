@@ -30,6 +30,7 @@
     function gotStream(stream) {
         console.log('[*] gotStream', stream);
         camera.src = URL.createObjectURL(stream);
+        camera.play();
     }
 
     global.addEventListener('load', getMedia.bind(null, constraints, gotStream, logError));
