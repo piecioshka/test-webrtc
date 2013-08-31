@@ -1,0 +1,19 @@
+{
+    "indent": 4,
+    "plusplus": true,
+    "strict": true,
+    "undef": true,
+    "unused": true,
+    "devel": true,
+    "browser": true,
+    "camelcase": true,
+    "white": true,
+    "globals": {
+        "URL": false,
+        "webkitAudioContext": false,
+
+        "getMedia": true,
+        "onLoad": true,
+        "logError": true
+    }
+}
