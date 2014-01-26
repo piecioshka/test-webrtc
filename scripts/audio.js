@@ -6,13 +6,12 @@
     };
 
     function gotAudioStream(stream) {
-        console.log('[*] gotAudioStream', stream);
-
         var audioContext = new webkitAudioContext();
         var mediaStreamSource = audioContext.createMediaStreamSource(stream);
         mediaStreamSource.connect(audioContext.destination);
     }
 
-    onLoad(getMedia.bind(null, constraints, gotAudioStream, logError));
+    // setup audio
+    getMedia(constraints, gotAudioStream, logError);
 
 }());

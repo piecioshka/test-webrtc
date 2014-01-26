@@ -8,11 +8,11 @@
     };
 
     function gotVideoStream(stream) {
-        console.log('[*] gotVideoStream', stream);
         camera.src = URL.createObjectURL(stream);
         camera.play();
     }
 
-    onLoad(getMedia.bind(null, constraints, gotVideoStream, logError));
+    // setup video
+    getMedia(constraints, gotVideoStream, logError);
 
 }());
