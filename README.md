@@ -1,7 +1,7 @@
 # test-webrtc
 
-> :ledger: Testing WebRTC
+:ledger: Testing WebRTC
 
-## Demo
+## Preview 🎉
 
 http://piecioshka.github.io/test-webrtc/
